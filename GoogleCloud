@@ -1,0 +1,4 @@
+# Aprendendo a manipular dados com GoogleCloud.
+SELECT * FROM `basedosdados.br_poder360_pesquisas.microdados` LIMIT 1000
+WHERE nome_municipio = "Duque de Caxias"
+LIMIT 10;
