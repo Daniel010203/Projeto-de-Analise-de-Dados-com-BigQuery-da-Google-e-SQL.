@@ -1,0 +1,10 @@
+SELECT DISTINCT sigla_partido
+FROM `basedosdados.br_poder360_pesquisas.microdados`
+WHERE ano >= 2014 and NOT sigla_partido != 'N/A' and sigla_partido !='sem partido'
+ORDER BY sigla_partido DESC;
+
+SELECT DISTINCT * FROM `basedosdados.br_poder360_pesquisas.microdados`
+WHERE instituto IN('DataFolha','Ibope') AND (sigla_uf IS NOT NULL) 
+ORDER BY sigla_uf;
+
+
