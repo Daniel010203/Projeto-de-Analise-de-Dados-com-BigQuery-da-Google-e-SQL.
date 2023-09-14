@@ -1,0 +1,4 @@
+SELECT DISTINCT id_pesquisa,ano,data_referencia,instituto
+FROM `basedosdados.br_poder360_pesquisas.microdados`
+WHERE ano = 2018 AND cargo = 'presidente'
+ORDER BY data_referencia;
