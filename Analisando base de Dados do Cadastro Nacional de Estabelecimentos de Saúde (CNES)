@@ -1,0 +1,19 @@
+Exercicios 1:
+#Analise das entidades das Salas dpi,salas de sorologia e a quantidade de salas de trafusão no ano de 2009 no estado de SP.
+
+SELECT quantidade_salas_dpi, quantidade_salas_sorologia ,quantidade_salas_transfusao
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE ano = 2009
+AND sigla_uf = 'SP';
+
+#Analise das entidades as Salas dpi,salas de sorologia e a quantidade de salas de trafusão no ano de 2009 ou ano de 2010.
+SELECT quantidade_salas_dpi, quantidade_salas_sorologia ,quantidade_salas_transfusao
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE ano = 2009 
+OR ano = 2010;
+
+#Analise das entidades s Salas dpi,salas de sorologia e a quantidade de salas de trafusão com o comando AS que substitui o nome da entidade por outro ao se executar a consulta do BD.
+SELECT quantidade_salas_dpi AS salas, quantidade_salas_sorologia AS sorologia ,quantidade_salas_transfusao AS transfusao
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE ano = 2016
+AND sigla_uf = 'BA';
