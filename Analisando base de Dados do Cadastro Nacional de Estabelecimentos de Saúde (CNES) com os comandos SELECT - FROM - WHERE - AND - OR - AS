@@ -1,5 +1,5 @@
 Exercicios 1:
-#Analise das entidades das Salas dpi,salas de sorologia e a quantidade de salas de trafusão no ano de 2009 no estado de SP.
+#Analise das entidades das Salas dpi,salas de sorologia e a quantidade de salas de trafusão no ano de 2009 e no estado de SP.
 
 SELECT quantidade_salas_dpi, quantidade_salas_sorologia ,quantidade_salas_transfusao
 FROM `basedosdados.br_ms_cnes.dados_complementares`
