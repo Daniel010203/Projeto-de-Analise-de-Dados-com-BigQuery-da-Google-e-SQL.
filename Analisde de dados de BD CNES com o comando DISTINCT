@@ -1,0 +1,11 @@
+Analise de dados com o comando DISTINCT onde foi feita a busca dentro do banco de dados para selecionar os estados que possuem as salas citadas no ano citado.
+
+SELECT  DISTINCT sigla_uf
+       quantidade_salas_aferese,
+       quantidade_salas_armazenagem,
+       quantidade_salas_coleta,
+       quantidade_salas_controle_qualidade,
+       quantidade_salas_imunohematologia,
+       quantidade_salas_transfusao,
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE ano = 2017;
