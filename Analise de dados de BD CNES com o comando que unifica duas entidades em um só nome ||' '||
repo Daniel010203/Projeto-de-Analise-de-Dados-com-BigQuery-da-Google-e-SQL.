@@ -1,0 +1,5 @@
+Analise de Dados com o comando ||' '|| para que os valores de duas entidades sejam unificados em um unico nome de entidade.
+
+SELECT sigla_uf = 'RJ','SP','MG','ES',
+       quantidade_freezers_18_graus_celsius || ' todos os frezeres ' || quantidade_freezers_30_graus_celsius,
+FROM `basedosdados.br_ms_cnes.dados_complementares`;
