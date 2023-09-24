@@ -1,0 +1,8 @@
+Analise de dados com o comando & e &&, onde estes comandos criam variáveis dentro do comando para que não seja preciso refazer o código para fazer as mesmas buscas nos mesmos locais especificos apontados na variável.
+
+SELECT sigla_uf = 'RJ','SP','MG','ES',
+      quantidade_centrifugas_refrigeradas,
+      quantidade_monitor_individual,
+      quantidade_salas_biologia_molecular,
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE sigla_uf = &sigla_uf;
