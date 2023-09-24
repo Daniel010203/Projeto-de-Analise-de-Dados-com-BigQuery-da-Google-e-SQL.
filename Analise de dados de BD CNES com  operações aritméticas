@@ -1,0 +1,13 @@
+Analise de dados:
+Operaççoes aritméticas analisando os dados dos equipamentos citados nos estados citados no ano de 2015 do banco de dados citado.
+
+SELECT sigla_uf = 'RJ','SP','MG','ES',
+       quantidade_freezers_18_graus_celsius + 100 AS soma,
+       quantidade_freezers_30_graus_celsius + 350 AS somaa,
+       quantidade_acelerador_linear_ate_6_mev + 200,
+       quantidade_acelerador_linear_maior_6_mev_com_eletrons * 4,
+       quantidade_dosimetro_clinico - 2,
+       quantidade_congeladores_rapidos / 5,
+       quantidade_equipamentos_braquiterapia_media * 20,
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE ano = 2015;
