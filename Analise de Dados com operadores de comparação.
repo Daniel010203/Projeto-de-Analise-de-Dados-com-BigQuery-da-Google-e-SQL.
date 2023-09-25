@@ -1,0 +1,25 @@
+Analise de dados para analisar se nos estados do RJ e SP, do banco de dados citado, existem a quantidade de frezzers acima ou abaixo do informado.
+
+SELECT sigla_uf = 'RJ','SP',
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE quantidade_freezers_18_graus_celsius <= 100
+AND quantidade_freezers_30_graus_celsius >= 50;
+
+Analise de dados com os operadores BETWEEN, que seleciona entre duas opçoes, operador IN que indica o que quer e o NOT IN que indica o que não quer.
+SELECT sigla_uf = 'RJ','SP',
+FROM `basedosdados.br_ms_cnes.dados_complementares`
+WHERE quantidade_freezers_18_graus_celsius BETWEEN 30 AND 200
+AND quantidade_freezers_30_graus_celsius IN (10,30,70)
+OR quantidade_freezers_30_graus_celsius NOT IN (50,60,90);
+
+Analise de dados com os operadores AND ou OR para apontar os dados dos anos de 2019 ou 2020.
+SELECT *
+FROM `basedosdados.br_ms_cnes.dados_complementares` 
+WHERE ano = 2020
+OR ano = 2019;
+
+SELECT *
+FROM `basedosdados.br_ms_cnes.dados_complementares` 
+WHERE ano = 2020
+AND ano = 2019;
+
