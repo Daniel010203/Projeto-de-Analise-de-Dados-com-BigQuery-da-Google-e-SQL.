@@ -1,5 +1,5 @@
 INTRODUÇÃO.
-O objetivo deste Paper é a apresentação de uma análise de dados com o uso da linguagem SQL,por meio da plataforma Google Cloud e a ferramenta da mesma chamada BigQuery, aonde por meio da análise será possível se obter resultados e informações para tomada de decisão.
+O objetivo deste projeto de análise de dados com o uso da linguagem SQL,por meio da plataforma Google Cloud e a ferramenta da mesma chamada BigQuery, aonde por meio da análise será possível se obter resultados e informações para tomada de decisão.
 Este estudo foi desenvolvido com os recursos de banco de dados do site: https://basedosdados.org/, site este que é uma organização não governamental sem fins lucrativos e open source. Este site possui o reconhecimento da Google Cloud Customer Award que é um reconhecimento a implantações mais inovadoras e transformadoras em sua plataforma ao redor do mundo e o XXVI Premio Tesouro Nacional 2021 em 1° lugar na categoria soluções para ciência de dados.
 
 FUNDAMENTAÇÃO TEÓRICA:
